@@ -1,0 +1,132 @@
+{
+    "products":[
+    {
+        "id":1,
+        "ref":"07109",
+        "img":"foto01.jpg",
+        "modelo": "Xiaomi Mi Electric Scooter Pro",
+        "txt": "La estructura del nuevo patinete Xiaomi Pro es plegable y resistente. Además es ligero (14.2 kg), y te permitirá transportarlo donde quieras o guardarlo sin que ocupe mucho espacio",
+        "destacado": 0,
+        "marca" : "Xiaomi",
+        "precio": 546,
+        "stock" : 15
+    },
+    {
+        "id":2,
+        "ref":"07110",
+        "img":"foto02.jpg",
+        "modelo": "Xiaomi Electric Scooter 4 Go",
+        "txt": "Un gran contraste de colores para moverte con estilo. Xiaomi Electric Scooter 4 Go cuenta con una exclusiva base redondeada con forma de circuito de carreras y un llamativo cubo de rueda con gran contraste de color en el diseño, lo que le da un toque de vitalidad y estilo a tus viajes",
+        "destacado": 0,
+        "marca" : "Xiaomi",
+        "precio": 299,
+        "stock" : 0
+    },
+    {
+        "id":3,
+        "ref":"07310",
+        "img":"foto03.jpg",
+        "txt": "El patinete puede alcanzar una velocidad máxima de 25 km/h y tiene una capacidad de ascensión de un 16 %. Avanza con solo pulsar ligeramente el acelerador.",
+        "modelo": "Bongo Serie M",
+        "destacado": 0,
+        "marca" : "Cecotec",
+        "precio": 350,
+        "stock" : 5
+    },
+    {
+        "id":4,
+        "ref":"07311",
+        "img":"foto04.jpg",
+        "modelo": "Bongo Serie S",
+        "txt": "El patinete puede alcanzar una velocidad máxima de 25 km/h y tiene una capacidad de ascensión de un 16 %. Avanza con solo pulsar ligeramente el acelerador.",
+        "destacado": 1,
+        "marca" : "Cecotec",
+        "precio": 375,
+        "stock" : 0
+    },
+    {
+        "id":5,
+        "ref":"07410",
+        "img":"foto05.jpg",
+        "modelo": "Xiaomi Mi Electric Scooter",
+        "txt": "El patinete puede alcanzar una velocidad máxima de 25 km/h y tiene una capacidad de ascensión de un 16 %. Avanza con solo pulsar ligeramente el acelerador.",
+        "destacado": 1,
+        "marca" : "Xiaomi",
+        "precio": 250,
+        "stock" : 30
+    },
+    {
+        "id":6,
+        "ref":"07420",
+        "img":"foto06.jpg",
+        "modelo": "Segway-Ninebot",
+        "txt": "El patinete puede alcanzar una velocidad máxima de 25 km/h y tiene una capacidad de ascensión de un 16 %. Avanza con solo pulsar ligeramente el acelerador.",
+        "destacado": 1,
+        "marca" : "SegWay",
+        "precio": 450,
+        "stock" : 2
+    }
+    ],
+    "marcas": [
+        {
+            "id": "001",
+            "img": "m1.webp",
+            "marca": "Samsung",
+            "descripcion": "Teléfono inteligente de última generación"
+        },
+        {
+            "id": "002",
+            "img": "m2.jpg",
+            "marca": "Nike",
+            "descripcion": "Zapatillas deportivas para correr"
+        },
+        {
+            "id": "003",
+            "img": "m3.jpg",
+            "marca": "Sony",
+            "descripcion": "Televisor LED de 55 pulgadas"
+        },
+        {
+            "id": "004",
+            "img": "m4.webp",
+            "marca": "Apple",
+            "descripcion": "Portátil ultradelgado con pantalla Retina"
+        },
+        {
+            "id": "005",
+            "img": "m5.jpg",
+            "marca": "Adidas",
+            "descripcion": "Ropa deportiva de alta calidad"
+        },
+        {
+            "id": "006",
+            "img": "m6.jpg",
+            "marca": "LG",
+            "descripcion": "Refrigerador de doble puerta con tecnología SmartThinQ"
+        },
+        {
+            "id": "007",
+            "img": "m7.avif",
+            "marca": "Canon",
+            "descripcion": "Cámara digital con sensor de alta resolución"
+        },
+        {
+            "id": "008",
+            "img": "m8.jpg",
+            "marca": "Dell",
+            "descripcion": "Computadora de escritorio potente para profesionales"
+        },
+        {
+            "id": "009",
+            "img": "m9.jpg",
+            "marca": "Puma",
+            "descripcion": "Zapatillas de moda para el estilo urbano"
+        },
+        {
+            "id": "010",
+            "img": "m10.webp",
+            "marca": "Microsoft",
+            "descripcion": "Tableta con Windows y lápiz táctil"
+        }
+    ]
+}
