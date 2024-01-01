@@ -1,4 +1,4 @@
-const ScooterTop = ({ modelo, precio }) => {
+const ProductTop = ({ modelo, precio }) => {
 	return (
 		<li className='list-group-item'>
 			{modelo}
@@ -8,4 +8,4 @@ const ScooterTop = ({ modelo, precio }) => {
 		</li>
 	)
 }
-export default ScooterTop
+export default ProductTop

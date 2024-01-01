@@ -7,7 +7,7 @@ export default function NotFound() {
       <h2 className='color404 font-weight-bold'>
         ¡Ups! Parece que hubo un problema
       </h2>
-      <p className='mt-5'>No podemos encontrar la ruta que nos pides</p>
+      <p className='mt-5'>No podemos encontrar la ruta solicitada</p>
       <p>
         Vuelve al <Link href='/'>Home</Link> y utiliza la barra de navegación
       </p>

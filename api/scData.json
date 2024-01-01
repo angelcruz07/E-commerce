@@ -1,7 +1,7 @@
 {
     "products":[
     {
-        "id":1,
+        "id": 1,
         "ref":"07109",
         "img":"foto01.jpg",
         "modelo": "Xiaomi Mi Electric Scooter Pro",
@@ -69,64 +69,93 @@
     ],
     "marcas": [
         {
-            "id": "001",
+            "id": 1,
             "img": "m1.webp",
             "marca": "Samsung",
-            "descripcion": "Teléfono inteligente de última generación"
+            "descripcion": "Teléfono inteligente de última generación",
+            "stock": 127,
+            "precio" : 3486,
+            "destacado" : 0
         },
         {
-            "id": "002",
+            "id": 2,
             "img": "m2.jpg",
             "marca": "Nike",
-            "descripcion": "Zapatillas deportivas para correr"
+            "descripcion": "Zapatillas deportivas para correr",
+            "stock": 11,
+            "precio" : 3466,
+            "destacado" : 0
         },
         {
-            "id": "003",
+            "id": 3,
             "img": "m3.jpg",
             "marca": "Sony",
-            "descripcion": "Televisor LED de 55 pulgadas"
+            "descripcion": "Televisor LED de 55 pulgadas",
+            "stock": 0,
+            "precio" : 3466,
+            "destacado" : 0
         },
         {
-            "id": "004",
+            "id": 4,
             "img": "m4.webp",
             "marca": "Apple",
-            "descripcion": "Portátil ultradelgado con pantalla Retina"
+            "descripcion": "Portátil ultradelgado con pantalla Retina",
+            "stock": 23,
+            "precio" : 3466,
+            "destacado" : 0
         },
         {
-            "id": "005",
+            "id": 5,
             "img": "m5.jpg",
             "marca": "Adidas",
-            "descripcion": "Ropa deportiva de alta calidad"
+            "descripcion": "Ropa deportiva de alta calidad",
+            "stock": 0,
+            "precio" : 343,
+            "destacado" : 1
         },
         {
-            "id": "006",
+            "id": 6,
             "img": "m6.jpg",
             "marca": "LG",
-            "descripcion": "Refrigerador de doble puerta con tecnología SmartThinQ"
+            "descripcion": "Refrigerador de doble puerta con tecnología SmartThinQ",
+            "stock": 12,
+            "precio" : 466,
+            "destacado" : 0
         },
         {
-            "id": "007",
+            "id": 7,
             "img": "m7.avif",
             "marca": "Canon",
-            "descripcion": "Cámara digital con sensor de alta resolución"
+            "descripcion": "Cámara digital con sensor de alta resolución",
+            "stock": 1288,
+            "destacado" : 0
         },
         {
-            "id": "008",
+            "id": 8,
             "img": "m8.jpg",
             "marca": "Dell",
-            "descripcion": "Computadora de escritorio potente para profesionales"
+            "descripcion": "Computadora de escritorio potente para profesionales",
+            "stock": 150,
+            "precio" : 346,
+            "destacado": 1
         },
         {
-            "id": "009",
+            "id": 9,
             "img": "m9.jpg",
             "marca": "Puma",
-            "descripcion": "Zapatillas de moda para el estilo urbano"
+            "descripcion": "Zapatillas de moda para el estilo urbano",
+            "stock": 15,
+            "precio" : 3466,
+            "destacado" : 1
         },
         {
-            "id": "010",
+            "id": 10,
             "img": "m10.webp",
             "marca": "Microsoft",
-            "descripcion": "Tableta con Windows y lápiz táctil"
+            "descripcion": "Tableta con Windows y lápiz táctil",
+            "stock": 0,
+            "precio" : 3434,
+            "destacado" : 1
         }
     ]
 }

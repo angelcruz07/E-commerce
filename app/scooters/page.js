@@ -1,5 +1,5 @@
 import ScooterCard from '../components/ScooterCard'
-import ScooterTop from '../components/ScooterTop'
+import ProductTop from '../components/ProductTop'
 
 async function getTopProducts() {
 	const res = await fetch('http://localhost:4000/products?destacado=1', {
@@ -33,7 +33,7 @@ const Scooter = async () => {
 	return (
 		<main className='contPrincipal'>
 			<div className='container mt-5 mb-5'>
-				<h2>Scooters (9) </h2>
+				<h2>Scooters ({products.length}) </h2>
 				<div className='grid'>
 					<div className='row mt-3'>
 						<div className='col-8'>
@@ -50,6 +50,7 @@ const Scooter = async () => {
 								))}
 							</div>
 						</div>
+
 						<div className='col-4'>
 							{/*DESTACADOS APILADOS*/}
 							<div className='card'>
@@ -58,7 +59,7 @@ const Scooter = async () => {
 								</div>
 								<ul className='list-group list-group-flush'>
 									{productsTop.map((productTop) => (
-										<ScooterTop
+										<ProductTop
 											key={productTop.id}
 											modelo={productTop.modelo}
 											precio={productTop.precio}
@@ -67,6 +68,7 @@ const Scooter = async () => {
 								</ul>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
