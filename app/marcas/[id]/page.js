@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import HouseFillClient from '@/app/components/HouseFillClient'
+import HouseFillClient from '@/app/components/client/HouseFillClient'
 
 async function getProduct(id) {
 	const res = await fetch('http://localhost:4000/marcas?id=' + id, {

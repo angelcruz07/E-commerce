@@ -67,7 +67,7 @@
         "stock" : 2
     }
     ],
-    "marcas": [
+    "otrosProductos": [
         {
             "id": 1,
             "img": "m1.webp",

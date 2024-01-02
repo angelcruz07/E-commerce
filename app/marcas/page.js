@@ -1,4 +1,4 @@
-import MarcasCard from '../components/MarcasCard'
+import ProductCard from '../components/ProductCard'
 import ProductTop from '../components/ProductTop'
 
 async function getTopMarcas() {
@@ -37,7 +37,7 @@ const Marcas = async () => {
 							{/*DESTACADOS TARJETAS*/}
 							<div className='d-flex p-2 flex-wrap justify-content-between'>
 								{marcas.map((marca) => (
-									<MarcasCard
+									<ProductCard
 										key={marca.id}
 										img={marca.img}
 										marca={marca.marca}

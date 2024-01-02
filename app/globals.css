@@ -1,8 +1,8 @@
 .contPrincipal{ 
-  margin-top: 64px;
+  margin-top: 70px;
 }
 .breadcrumb-top { 
-  margin-top: 80px;
+  margin-top: 74px;
 }
 .contFiltro{
   margin-top: 61px;
@@ -15,4 +15,23 @@
 }
 .nav-link.active{
   font-weight: bold;
+}
+
+[data-theme='dark'] body{
+  background-color: rgb(108, 117, 125);
+}
+nav{
+  background-color: rgb(233, 236, 239);
+}
+[data-theme='dark'] nav{
+  color: #ffffff;
+  background-color: rgb(52, 58, 64);
+}
+[data-theme='dark'] a, [data-theme='dark'] a.nav-link.active {
+  color: #ffffff;
+  background-color: rgb(52, 58, 64);
+}
+
+[data-theme='dark'] h2, h1{
+  color: #ffffff;
 }

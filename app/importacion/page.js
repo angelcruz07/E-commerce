@@ -1,11 +1,64 @@
-import 'bootstrap/dist/css/bootstrap.css'
+import ScooterCard from '../components/ScooterCard'
 
-const Page = () => {
-  return (
-    <main className='contPrincipal'>
-      <h1>el pepe</h1>
-    </main>
-  )
+const url =
+	'https://aliexpress-datahub.p.rapidapi.com/item_search?q=iphone&page=1&sort=latest&loc=ES&locale=es_ES&region=ES&currency=EUR'
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '313129755emsh68f70976f320037p1b4615jsn802210f8c7f1',
+		'X-RapidAPI-Host': 'aliexpress-datahub.p.rapidapi.com'
+	}
 }
 
-export default Page
+async function getProducts(precio) {
+	const res = await fetch(url, options)
+	if (!res.ok) {
+		throw new Error('Failed to fetch data')
+	}
+	return res.json()
+}
+
+const Importacion = async () => {
+	const productsJSON = await getProducts()
+	const products = productsJSON.result.resultList
+	console.log(products)
+
+	return (
+		<main className='contPrincipal'>
+			<div className='container mb-5'>
+				<h2>Scooters ({products.length}) </h2>
+				<div className='grid'>
+					<div className='row mt-3'>
+						<div className='col-8'>
+							{/*DESTACADOS TARJETAS*/}
+							<div className='d-flex p-2 flex-wrap justify-content-between'>
+								{products.map((product) => (
+									<ScooterCard
+										key={product.item.itemId}
+										img={product.item.image}
+										modelo='Desconocido'
+										txt={product.item.title}
+										id={product.item.itemId}
+									/>
+								))}
+							</div>
+						</div>
+						<div className='col-4'>
+							{/*DESTACADOS APILADOS*/}
+							<div className='card'>
+								<div className='card-header'>
+									<h4>Top</h4>
+								</div>
+								<ul className='list-group list-group-flush'>
+									{/* TOP PRODUCTS */}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	)
+}
+
+export default Importacion
