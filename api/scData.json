@@ -71,7 +71,7 @@
         {
             "id": 1,
             "img": "m1.webp",
-            "marca": "Samsung",
+            "modelo": "Samsung",
             "descripcion": "Teléfono inteligente de última generación",
             "stock": 127,
             "precio" : 3486,
@@ -80,7 +80,7 @@
         {
             "id": 2,
             "img": "m2.jpg",
-            "marca": "Nike",
+            "modelo": "Nike",
             "descripcion": "Zapatillas deportivas para correr",
             "stock": 11,
             "precio" : 3466,
@@ -89,7 +89,7 @@
         {
             "id": 3,
             "img": "m3.jpg",
-            "marca": "Sony",
+            "modelo": "Sony",
             "descripcion": "Televisor LED de 55 pulgadas",
             "stock": 0,
             "precio" : 3466,
@@ -98,7 +98,7 @@
         {
             "id": 4,
             "img": "m4.webp",
-            "marca": "Apple",
+            "modelo": "Apple",
             "descripcion": "Portátil ultradelgado con pantalla Retina",
             "stock": 23,
             "precio" : 3466,
@@ -107,7 +107,7 @@
         {
             "id": 5,
             "img": "m5.jpg",
-            "marca": "Adidas",
+            "modelo": "Adidas",
             "descripcion": "Ropa deportiva de alta calidad",
             "stock": 0,
             "precio" : 343,
@@ -116,7 +116,7 @@
         {
             "id": 6,
             "img": "m6.jpg",
-            "marca": "LG",
+            "modelo": "LG",
             "descripcion": "Refrigerador de doble puerta con tecnología SmartThinQ",
             "stock": 12,
             "precio" : 466,
@@ -125,7 +125,7 @@
         {
             "id": 7,
             "img": "m7.avif",
-            "marca": "Canon",
+            "modelo": "Canon",
             "descripcion": "Cámara digital con sensor de alta resolución",
             "stock": 1288,
             "destacado" : 0
@@ -133,7 +133,7 @@
         {
             "id": 8,
             "img": "m8.jpg",
-            "marca": "Dell",
+            "modelo": "Dell",
             "descripcion": "Computadora de escritorio potente para profesionales",
             "stock": 150,
             "precio" : 346,
@@ -142,7 +142,7 @@
         {
             "id": 9,
             "img": "m9.jpg",
-            "marca": "Puma",
+            "modelo": "Puma",
             "descripcion": "Zapatillas de moda para el estilo urbano",
             "stock": 15,
             "precio" : 3466,
@@ -151,7 +151,7 @@
         {
             "id": 10,
             "img": "m10.webp",
-            "marca": "Microsoft",
+            "modelo": "Microsoft",
             "descripcion": "Tableta con Windows y lápiz táctil",
             "stock": 0,
             "precio" : 3434,

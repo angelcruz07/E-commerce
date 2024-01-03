@@ -1,5 +1,5 @@
 import SearchNav from '../components/client/SearchNav'
-import ScooterCard from '../components/ScooterCard'
+import ProductCard from '../components/ProductCard'
 import ProductTop from '../components/ProductTop'
 
 async function getTopProducts() {
@@ -31,7 +31,6 @@ const Scooter = async ({ searchParams }) => {
 	const products = await getProducts(searchParams.precio)
 	const productsTop = await getTopProducts()
 	return (
-
 		<>
 			<main className='contPrincipal'>
 				<SearchNav />
@@ -43,9 +42,9 @@ const Scooter = async ({ searchParams }) => {
 								{/*DESTACADOS TARJETAS*/}
 								<div className='d-flex p-2 flex-wrap justify-content-between'>
 									{products.map((product) => (
-										<ScooterCard
+										<ProductCard
 											key={product.id}
-											route="/scooters"
+											route='/scooters'
 											img={product.img}
 											modelo={product.modelo}
 											txt={product.txt}

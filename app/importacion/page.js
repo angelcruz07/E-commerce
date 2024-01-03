@@ -1,4 +1,4 @@
-import ScooterCard from '../components/ScooterCard'
+import ProductCard from '../components/ProductCard'
 
 const url =
 	'https://aliexpress-datahub.p.rapidapi.com/item_search?q=iphone&page=1&sort=latest&loc=ES&locale=es_ES&region=ES&currency=EUR'
@@ -21,7 +21,6 @@ async function getProducts(precio) {
 const Importacion = async () => {
 	const productsJSON = await getProducts()
 	const products = productsJSON.result.resultList
-	console.log(products)
 
 	return (
 		<main className='contPrincipal'>
@@ -33,10 +32,10 @@ const Importacion = async () => {
 							{/*DESTACADOS TARJETAS*/}
 							<div className='d-flex p-2 flex-wrap justify-content-between'>
 								{products.map((product) => (
-									<ScooterCard
+									<ProductCard
 										key={product.item.itemId}
 										img={product.item.image}
-										modelo='Desconocido'
+										modelo={product.item.title.split(" ").slice(0, 3).join(" ")}
 										txt={product.item.title}
 										id={product.item.itemId}
 									/>

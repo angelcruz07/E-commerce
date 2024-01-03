@@ -14,25 +14,26 @@ async function getProducts() {
 }
 
 const ProductGallery = async () => {
-	const marcas = await getProducts()
+	const products = await getProducts()
 
 	return (
 		<>
 			<h2 className='text-center m-3'>
-				Productos recomendados {marcas.length}
+				Productos recomendados {products.length}
 			</h2>
 			<div className='grid m-5'>
 				<div className='row mt-3'>
 					<div className='col-8'>
 						{/*DESTACADOS TARJETAS*/}
 						<div className='d-flex p-2 flex-wrap justify-content-between'>
-							{marcas.map((marca) => (
+							{products.map((product) => (
 								<ProductCard
-									key={marca.id}
-									img={marca.img}
-									marca={marca.marca}
-									descripcion={marca.descripcion}
-									id={marca.id}
+									key={product.id}
+									img={product.img}
+									modelo={product.modelo}
+									txt={product.descripcion}
+									id={product.id}
+									route='/'
 								/>
 							))}
 						</div>
