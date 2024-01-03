@@ -4,7 +4,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 
 const DropDown = () => {
 	return (
-		<div className='my-2 my-sm-0'>
+		<div className='me-3 my-sm-0 p-0'>
 			<Dropdown>
 				<Dropdown.Toggle variant='success' id='dropdown-basic'>
 					Más sobre
@@ -24,5 +24,4 @@ const DropDown = () => {
 		</div>
 	)
 }
-
 export default DropDown

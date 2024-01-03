@@ -2,7 +2,7 @@ import Link from 'next/link'
 import LinkClient from './client/LinkClient'
 import DropDown from './client/DropDown'
 import SwitchClient from './client/SwitchClient'
-
+import ShoppingCart from './client/ShoppingCart'
 
 const Navbar = () => {
 	return (
@@ -45,8 +45,11 @@ const Navbar = () => {
 					aria-label='Toggle navigation'>
 					<span className='navbar-toggler-icon' />
 				</button>
-				<DropDown />
-				<SwitchClient />
+				<div className='d-flex align-items-center'>
+					<DropDown />
+					<SwitchClient />
+					<ShoppingCart></ShoppingCart>
+				</div>
 			</div>
 		</nav>
 	)
