@@ -2,7 +2,6 @@
 
 import { CartFill } from 'react-bootstrap-icons'
 
-
 const ShoppingCart = () => {
 	return (
 		<CartFill
