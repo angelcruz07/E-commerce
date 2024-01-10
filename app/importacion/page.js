@@ -1,11 +1,12 @@
 import ProductCard from '../components/ProductCard'
 
 const url =
-	'https://aliexpress-datahub.p.rapidapi.com/item_search?q=iphone&page=1&sort=latest&loc=ES&locale=es_ES&region=ES&currency=EUR'
+	process.env.DB_HOST_RAPIDAPI +
+	'item_search?q=iphone&page=1&sort=latest&loc=ES&locale=es_ES&region=ES&currency=EUR'
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '313129755emsh68f70976f320037p1b4615jsn802210f8c7f1',
+		'X-RapidAPI-Key': process.env.KEY_RAPIDAPI,
 		'X-RapidAPI-Host': 'aliexpress-datahub.p.rapidapi.com'
 	}
 }
@@ -35,7 +36,7 @@ const Importacion = async () => {
 									<ProductCard
 										key={product.item.itemId}
 										img={product.item.image}
-										modelo={product.item.title.split(" ").slice(0, 3).join(" ")}
+										modelo={product.item.title.split(' ').slice(0, 3).join(' ')}
 										txt={product.item.title}
 										id={product.item.itemId}
 									/>

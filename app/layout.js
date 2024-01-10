@@ -2,7 +2,6 @@ import ThemeProviderClient from './provider/ThemeProviderClient'
 import Navbar from './components/Navbar'
 import { Inter } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.css'
-
 import './globals.css'
 
 // eslint-disable-next-line

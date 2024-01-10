@@ -2,7 +2,7 @@ import ProductCard from '../components/ProductCard'
 import ProductTop from '../components/ProductTop'
 
 async function getTopMarcas() {
-	const res = await fetch('http://localhost:4000/otrosProductos?destacado=1', {
+	const res = await fetch(process.env.DB_HOST + 'otrosProductos?destacado=1', {
 		next: { revalidate: 86400 }
 	})
 	if (!res.ok) {

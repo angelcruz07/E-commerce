@@ -2,7 +2,7 @@ import ProductCard from './ProductCard'
 import Categorias from './Categorias'
 
 async function getProducts() {
-	const res = await fetch('http://localhost:4000/otrosProductos?destacado=1', {
+	const res = await fetch(process.env.DB_HOST + 'otrosProductos?destacado=1', {
 		next: {
 			revalidate: 86400
 		}
@@ -42,12 +42,18 @@ const ProductGallery = async () => {
 						{/*DESTACADOS APILADOS*/}
 						<div className='card'>
 							<div className='card-header'>
-								<h4 className='text-center' data-bs-theme=''>Categorias</h4>
+								<h4 className='text-center' data-bs-theme=''>
+									Categorias
+								</h4>
 							</div>
 							<ul className='list-group list-group-flush'>
-							<Categorias categoria="Tenis" href="/tenis" txt="Ir a ver"/>
-							<Categorias categoria="Ropa" href="/tenis" txt="Ir a ver"/>
-							<Categorias categoria="Accesorios" href="/tenis" txt="Ir a ver"/>
+								<Categorias categoria='Tenis' href='/tenis' txt='Ir a ver' />
+								<Categorias categoria='Ropa' href='/tenis' txt='Ir a ver' />
+								<Categorias
+									categoria='Accesorios'
+									href='/tenis'
+									txt='Ir a ver'
+								/>
 							</ul>
 						</div>
 					</div>

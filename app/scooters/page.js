@@ -3,13 +3,12 @@ import ProductCard from '../components/ProductCard'
 import ProductTop from '../components/ProductTop'
 
 async function getTopProducts() {
-	const res = await fetch('http://localhost:4000/products?destacado=1', {
+	const res = await fetch(process.env.DB_HOST + 'products?destacado=1', {
 		next: { revalidate: 86400 }
 	})
 	if (!res.ok) {
 		throw new Error('Failed to fetch data')
 	}
-
 	return res.json()
 }
 
@@ -17,10 +16,10 @@ async function getTopProducts() {
 async function getProducts(precio) {
 	let res
 	if (precio) {
-		res = await fetch('http://localhost:4000/products?precio_lte=' + precio)
+		res = await fetch(process.env.DB_HOST + 'products?precio_lte=' + precio)
 	}
 	// Revalidacion y carga de datos
-	else res = await fetch('http://localhost:4000/products')
+	else res = await fetch(process.env.DB_HOST + 'products')
 	if (!res.ok) {
 		throw new Error('Failed to fetch data')
 	}

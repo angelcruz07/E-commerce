@@ -2,7 +2,7 @@ import Link from 'next/link'
 import HouseFillClient from '../../components/client/HouseFillClient'
 
 async function getProduct(id) {
-	const res = await fetch('http://localhost:4000/products?id=' + id, {
+	const res = await fetch(process.env.DB_HOST + 'products?id=' + id, {
 		cache: 'no-store'
 	})
 

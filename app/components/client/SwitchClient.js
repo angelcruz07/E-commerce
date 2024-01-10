@@ -17,7 +17,9 @@ const SwitchClient = () => {
 
 	return (
 		<div className='me-3'>
-			<button className='btn btn-outline-secondary  d-flex justify-content-center align-content-center' onClick={changeTheme}>
+			<button
+				className='btn btn-outline-secondary  d-flex justify-content-center align-content-center'
+				onClick={changeTheme}>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					width='20'
