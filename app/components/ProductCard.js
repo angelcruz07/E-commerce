@@ -16,7 +16,9 @@ function ProductCard({ img, modelo, txt, id, route }) {
 			<div className='card-body'>
 				<h5 className='card-title'>{modelo}</h5>
 				<p className='card-text text-truncate'>{txt}</p>
-				<Link href={route === '/' ? '/marcas/' + id : route + '/' +id} className='btn btn-primary'>
+				<Link
+					href={route === '/' ? '/marcas/' + id : route + '/' + id}
+					className='btn btn-primary'>
 					Más Info
 				</Link>
 			</div>

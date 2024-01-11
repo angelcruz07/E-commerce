@@ -34,6 +34,14 @@ const Navbar = () => {
 							<LinkClient className='nav-link' route='/marcas' texto='Marcas' />
 						</li>
 					</ul>
+					<div className='d-flex align-items-center'>
+						<DropDown />
+						<SwitchClient />
+						<LinkClient
+							route='/shoppingcart'
+							texto={<ShoppingCart></ShoppingCart>}
+						/>
+					</div>
 				</div>
 				<button
 					className='navbar-toggler p-0 m-0'
@@ -45,14 +53,6 @@ const Navbar = () => {
 					aria-label='Toggle navigation'>
 					<span className='navbar-toggler-icon' />
 				</button>
-				<div className='d-flex align-items-center'>
-					<DropDown />
-					<SwitchClient />
-					<LinkClient
-						route='/shoppingcart'
-						texto={<ShoppingCart></ShoppingCart>}
-					/>
-				</div>
 			</div>
 		</nav>
 	)

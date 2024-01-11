@@ -23,23 +23,8 @@ const ProductGallery = async () => {
 			</h2>
 			<div className='grid m-5'>
 				<div className='row mt-3'>
-					<div className='col-8'>
-						{/*DESTACADOS TARJETAS*/}
-						<div className='d-flex p-2 flex-wrap justify-content-between'>
-							{products.map((product) => (
-								<ProductCard
-									key={product.id}
-									img={product.img}
-									modelo={product.modelo}
-									txt={product.descripcion}
-									id={product.id}
-									route='/'
-								/>
-							))}
-						</div>
-					</div>
-					<div className='col-4'>
-						{/*DESTACADOS APILADOS*/}
+					<div className='col-md-4'>
+						{/* DESTACADOS APILADOS */}
 						<div className='card'>
 							<div className='card-header'>
 								<h4 className='text-center' data-bs-theme=''>
@@ -55,6 +40,21 @@ const ProductGallery = async () => {
 									txt='Ir a ver'
 								/>
 							</ul>
+						</div>
+					</div>
+					<div className='col-md-8'>
+						{/* DESTACADOS TARJETAS */}
+						<div className='d-flex p-2 flex-wrap justify-content-around'>
+							{products.map((product) => (
+								<ProductCard
+									key={product.id}
+									img={product.img}
+									modelo={product.modelo}
+									txt={product.descripcion}
+									id={product.id}
+									route='/'
+								/>
+							))}
 						</div>
 					</div>
 				</div>
