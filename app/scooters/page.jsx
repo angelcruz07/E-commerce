@@ -29,6 +29,7 @@ async function getProducts(precio) {
 const Scooter = async ({ searchParams }) => {
 	const products = await getProducts(searchParams.precio)
 	const productsTop = await getTopProducts()
+
 	return (
 		<>
 			<main className='contPrincipal'>

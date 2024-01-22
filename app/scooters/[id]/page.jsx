@@ -1,5 +1,7 @@
+'use client'
 import Link from 'next/link'
 import HouseFillClient from '../../components/client/HouseFillClient'
+import { addToCart } from '@/app/provider/useCart'
 
 async function getProduct(id) {
 	const res = await fetch(process.env.DB_HOST + 'products?id=' + id, {
@@ -14,9 +16,9 @@ async function getProduct(id) {
 
 const ScooterDetail = async ({ params }) => {
 	const data = await getProduct(params.id)
+
 	const product = data[0]
 
-	//Stock
 	let colorStock = '#3E820D'
 	let bgColorStock = '#EEFBD0'
 	if (product.stock == 0) {
@@ -70,6 +72,12 @@ const ScooterDetail = async ({ params }) => {
 							{' '}
 							{product.precio} € <span>IVA incluido</span>
 						</p>
+
+						<button
+							className='btn btn-primary'
+							onClick={() => addToCart(product.id)}>
+							Agregar al carro
+						</button>
 					</div>
 				</div>
 			</div>

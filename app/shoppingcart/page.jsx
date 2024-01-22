@@ -23,11 +23,14 @@ const ShopCart = () => {
 											<h6 className='mb-0'>You have 4 items in your cart</h6>
 											<hr />
 											<div className='d-flex justify-content-between align-items-center mb-4'></div>
-											<ItemCart />
+											{cartItems.map((item) => (
+												<ItemCart {...props} />
+											))}
 										</div>
+
 										{/* Details */}
 										<div className='col-lg-5'>
-											<Checkout/>
+											<Checkout />
 										</div>
 									</div>
 								</div>
