@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link'
 import HouseFillClient from '../../components/client/HouseFillClient'
-import useCart from '@/app/provider/useCart'
 
 async function getProduct(id) {
 	const res = await fetch(
@@ -18,8 +17,6 @@ async function getProduct(id) {
 }
 
 const ScooterDetail = async ({ params }) => {
-	const { addToCart } = useCart()
-
 	const data = await getProduct(params.id)
 
 	const product = data[0]
@@ -77,12 +74,11 @@ const ScooterDetail = async ({ params }) => {
 							{' '}
 							{product.precio} € <span>IVA incluido</span>
 						</p>
-
-						<button
+						{/* <button
 							className='btn btn-primary'
 							onClick={() => addToCart(product.id)}>
 							Agregar al carro
-						</button>
+						</button> */}
 					</div>
 				</div>
 			</div>

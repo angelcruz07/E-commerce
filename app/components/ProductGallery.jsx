@@ -32,11 +32,11 @@ const ProductGallery = async () => {
 								</h4>
 							</div>
 							<ul className='list-group list-group-flush'>
-								<Categorias categoria='Tenis' href='/tenis' txt='Ir a ver' />
-								<Categorias categoria='Ropa' href='/tenis' txt='Ir a ver' />
+								<Categorias categoria='Tenis' href='/marcas' txt='Ir a ver' />
+								<Categorias categoria='Ropa' href='/marcas' txt='Ir a ver' />
 								<Categorias
 									categoria='Accesorios'
-									href='/tenis'
+									href='/importacion'
 									txt='Ir a ver'
 								/>
 							</ul>

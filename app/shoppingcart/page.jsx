@@ -2,11 +2,8 @@
 import ItemCart from '../components/client/ItemCart'
 import LinkClient from '../components/client/LinkClient'
 import Checkout from '../components/Checkout'
-import useCart from '@/app/provider/useCart'
 
 const ShopCart = () => {
-	const { cartItem } = useCart()
-
 	return (
 		<main className='contPrincipal'>
 			<section className='h-100 h-custom'>
@@ -24,12 +21,13 @@ const ShopCart = () => {
 													className='text-body'
 												/>
 											</h5>
-											<h6 className='mb-0'>You have 4 items in your cart</h6>
+											<h6 className='mb-0'>
+												Tu tienes 4 productos en tu carrito
+											</h6>
 											<hr />
 											<div className='d-flex justify-content-between align-items-center mb-4'></div>
-											{cartItem.map((item) => (
-												<ItemCart {...props} />
-											))}
+											<ItemCart />
+											<ItemCart />
 										</div>
 
 										{/* Details */}

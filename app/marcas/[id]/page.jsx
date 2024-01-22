@@ -14,6 +14,7 @@ async function getProduct(id) {
 const productDetail = async ({ params }) => {
 	const data = await getProduct(params.id)
 	const product = data[0]
+
 	//Stock
 	var colorStock = '#3E820D'
 	var bgColorStock = '#EEFBD0'

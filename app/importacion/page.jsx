@@ -39,19 +39,9 @@ const Importacion = async () => {
 										modelo={product.item.title.split(' ').slice(0, 3).join(' ')}
 										txt={product.item.title}
 										id={product.item.itemId}
+										route='/importacion'
 									/>
 								))}
-							</div>
-						</div>
-						<div className='col-4'>
-							{/*DESTACADOS APILADOS*/}
-							<div className='card'>
-								<div className='card-header'>
-									<h4>Top</h4>
-								</div>
-								<ul className='list-group list-group-flush'>
-									{/* TOP PRODUCTS */}
-								</ul>
 							</div>
 						</div>
 					</div>
