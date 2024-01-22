@@ -14,7 +14,7 @@ async function getTopMarcas() {
 
 //End Point Productos
 async function getMarcas() {
-	const res = await fetch('http://localhost:4000/otrosProductos')
+	const res = await fetch(process.env.DB_HOST + 'otrosProductos')
 
 	if (!res.ok) {
 		throw new Error('Failed to fetch data')

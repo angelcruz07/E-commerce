@@ -2,7 +2,7 @@ import Link from 'next/link'
 import HouseFillClient from '@/app/components/client/HouseFillClient'
 
 async function getProduct(id) {
-	const res = await fetch('http://localhost:4000/otrosProductos?id=' + id, {
+	const res = await fetch(process.env.DB_HOST + 'otrosProductos?id=' + id, {
 		cache: 'no-store'
 	})
 	if (!res.ok) {
@@ -14,7 +14,6 @@ async function getProduct(id) {
 const productDetail = async ({ params }) => {
 	const data = await getProduct(params.id)
 	const product = data[0]
-
 	//Stock
 	var colorStock = '#3E820D'
 	var bgColorStock = '#EEFBD0'

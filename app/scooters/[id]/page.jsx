@@ -1,12 +1,15 @@
 'use client'
 import Link from 'next/link'
 import HouseFillClient from '../../components/client/HouseFillClient'
-import { addToCart } from '@/app/provider/useCart'
+// import { addToCart } from '@/app/provider/useCart'
 
 async function getProduct(id) {
-	const res = await fetch(process.env.DB_HOST + 'products?id=' + id, {
-		cache: 'no-store'
-	})
+	const res = await fetch(
+		'https://json-sever-eccomerce.vercel.app/products?id=' + id,
+		{
+			cache: 'no-store'
+		}
+	)
 
 	if (!res.ok) {
 		throw new Error('Failded to fetch data')
