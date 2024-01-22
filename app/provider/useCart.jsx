@@ -1,5 +1,4 @@
 'use client'
-
 import { create } from 'zustand'
 
 const useCart = create((set) => ({
@@ -20,12 +19,12 @@ const useCart = create((set) => ({
 							? { ...cartItem, quantity: cartItem.quantity + 1 }
 							: cartItem
 					),
-					totalPrice: state.totalPrice + product.price
+					totalPrice: state.totalPrice + product.precio
 				}
 			} else {
 				return {
 					cartItem: [...state.cartItem, { ...product, quantity: 1 }],
-					totalPrice: state.totalPrice + product.price
+					totalPrice: state.totalPrice + product.precio
 				}
 			}
 		})
@@ -48,14 +47,14 @@ const useCart = create((set) => ({
 
 					return {
 						cartItem: updatedCartItems,
-						totalPrice: state.totalPrice - itemToRemove.price
+						totalPrice: state.totalPrice - itemToRemove.precio
 					}
 				} else {
 					updatedCartItems.splice(itemIndex, 1)
 
 					return {
 						cartItem: updatedCartItems,
-						totalPrice: state.totalPrice - itemToRemove.price
+						totalPrice: state.totalPrice - itemToRemove.precio
 					}
 				}
 			}

@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import HouseFillClient from '../../components/client/HouseFillClient'
-// import { addToCart } from '@/app/provider/useCart'
+import useCart from '@/app/provider/useCart'
 
 async function getProduct(id) {
 	const res = await fetch(
@@ -18,6 +18,8 @@ async function getProduct(id) {
 }
 
 const ScooterDetail = async ({ params }) => {
+	const { addToCart } = useCart()
+
 	const data = await getProduct(params.id)
 
 	const product = data[0]

@@ -1,8 +1,12 @@
+'use client'
 import ItemCart from '../components/client/ItemCart'
 import LinkClient from '../components/client/LinkClient'
 import Checkout from '../components/Checkout'
+import useCart from '@/app/provider/useCart'
 
 const ShopCart = () => {
+	const { cartItem } = useCart()
+
 	return (
 		<main className='contPrincipal'>
 			<section className='h-100 h-custom'>
@@ -23,7 +27,7 @@ const ShopCart = () => {
 											<h6 className='mb-0'>You have 4 items in your cart</h6>
 											<hr />
 											<div className='d-flex justify-content-between align-items-center mb-4'></div>
-											{cartItems.map((item) => (
+											{cartItem.map((item) => (
 												<ItemCart {...props} />
 											))}
 										</div>

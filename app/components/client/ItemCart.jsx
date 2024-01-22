@@ -3,7 +3,8 @@ import useCart from '@/app/provider/useCart'
 
 import { Plus, Dash, ArrowRight } from 'react-bootstrap-icons'
 
-const ItemCart = ({ id, img, price, quantity }) => {
+const ItemCart = ({ id, img, precio, modelo, quantity }) => {
+	const { carItem, totalPrice } = useCart()
 	return (
 		<>
 			<div className='row mb-4 d-flex justify-content-between align-items-center'>
@@ -11,7 +12,7 @@ const ItemCart = ({ id, img, price, quantity }) => {
 					<img src={img} className='img-fluid rounded-3' alt='Cotton T-shirt' />
 				</div>
 				<div className='col-md-3 col-lg-3 col-xl-3'>
-					<h6 className='text-muted'>Shirt</h6>
+					<h6 className='text-muted'>{modelo}</h6>
 					<h6 className='text-black mb-0'>Cotton T-shirt</h6>
 				</div>
 				<div className='col-md-3 col-lg-3 col-xl-2 d-flex'>
