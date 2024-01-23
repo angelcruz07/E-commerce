@@ -11,7 +11,7 @@ const options = {
 	}
 }
 
-async function getProducts(precio) {
+async function getProducts() {
 	const res = await fetch(url, options)
 	if (!res.ok) {
 		throw new Error('Failed to fetch data')
@@ -26,10 +26,10 @@ const Importacion = async () => {
 	return (
 		<main className='contPrincipal'>
 			<div className='container mb-5'>
-				<h2>Scooters ({products.length}) </h2>
+				<h2>Productos de importacion ({products.length}) </h2>
 				<div className='grid'>
 					<div className='row mt-3'>
-						<div className='col-8'>
+						<div className=' contend-center'>
 							{/*DESTACADOS TARJETAS*/}
 							<div className='d-flex p-2 flex-wrap justify-content-between'>
 								{products.map((product) => (
@@ -39,7 +39,7 @@ const Importacion = async () => {
 										modelo={product.item.title.split(' ').slice(0, 3).join(' ')}
 										txt={product.item.title}
 										id={product.item.itemId}
-										route='/importacion'
+										link='/importacion'
 									/>
 								))}
 							</div>
