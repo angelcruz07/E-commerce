@@ -1,5 +1,4 @@
 import ProductCard from '../components/ProductCard'
-import CardImport from '../components/client/CardImport'
 
 const url =
 	process.env.DB_HOST_RAPIDAPI +

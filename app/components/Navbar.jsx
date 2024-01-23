@@ -37,10 +37,7 @@ const Navbar = () => {
 					<div className='d-flex align-items-center'>
 						<DropDown />
 						<SwitchClient />
-						<LinkClient
-							route='/shoppingcart'
-							texto={<ShoppingCart></ShoppingCart>}
-						/>
+						<LinkClient route='/' texto={<ShoppingCart></ShoppingCart>} />
 					</div>
 				</div>
 				<button
